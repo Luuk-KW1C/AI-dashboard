@@ -1,0 +1,9 @@
+.navbar ul li strong {
+  background: linear-gradient(to right, #53E7FF, #B57DFF, #FF88D8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+  background: linear-gradient(to right, #48ff8254, #53e8ff56, #b57dff4f, #ffffff4f);
+}

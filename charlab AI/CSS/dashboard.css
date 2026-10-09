@@ -1,0 +1,257 @@
+.navbar ul li strong {
+  background: linear-gradient(to right, #53E7FF, #B57DFF, #FF88D8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+  background: linear-gradient(to right, #48ff8254, #53e8ff56, #b57dff4f, #ffffff4f);
+}
+
+main.dashboard {
+  flex: 1;
+  padding: 50px 120px 50px 90px;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  gap: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #181818;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px 0;
+  margin-left: 500px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  width: 550px;
+}
+
+img[alt="search icon"] {
+  width: 20px;
+  height: 20px;
+  background: #181818;
+  border-radius: 30%;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+img[alt="search icon"]:hover {
+  filter: brightness(1.3);
+  transform: scale(1.1);
+  box-shadow: 0 0 8px #000;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+section.quick {
+  flex: 0 0 43%;
+  background: #181818;
+  border-radius: 70px;
+  padding: 10px 20px 30px 15px;
+  margin: 0 0 90px 30px;
+}
+
+section.quick h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.quick-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 20px 35px 0 20px;
+}
+
+.quick-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #181818;
+  padding: 5px;
+}
+
+/* Counter boxes */
+.counter-box {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 95%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 20px 22px 20px 25px;
+  border-radius: 30px;
+  background: #292929;
+}
+
+.counter-box p {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 5px;
+  line-height: 1;
+}
+
+.counter-box h1 {
+  font-size: 25px;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* Plus Button */
+.plus-btn {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  font-size: 35px;
+  border: none;
+  border-radius: 30%;
+  color: #292929;
+  background: #707070;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.plus-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px currentColor;
+}
+
+/* Quick Access Colors */
+.counter-box.green { background: #1f5731; }
+.counter-box.green p { color: #48ff81; }
+.counter-box.green .plus-btn { background: #48ff81; }
+
+.counter-box.blue { background: #1c4d5a; }
+.counter-box.blue p { color: #53E7FF; }
+.counter-box.blue .plus-btn { background: #53E7FF; }
+
+.counter-box.purple { background: #3c2d4e; }
+.counter-box.purple p { color: #B57DFF; }
+.counter-box.purple .plus-btn { background: #B57DFF; }
+
+.counter-box.pink { background: #5e2c3c; }
+.counter-box.pink p { color: #FF88D8; }
+.counter-box.pink .plus-btn { background: #FF88D8; }
+
+section.recent {
+  flex: 0 0 44%;
+  background: #181818;
+  border-radius: 70px;
+  padding: 10px 25px;
+  margin-right: 30px;
+}
+
+section.recent h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Recent items */
+section.recent > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 12px auto 0;
+  padding: 10px 15px;
+  background: #292929;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+section.recent > div img:first-child {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 6px;
+  flex-shrink: 0;
+  background: #000;
+  object-fit: cover;
+}
+
+section.recent > div > div {
+  flex-grow: 1;
+}
+
+/* Recent text */
+section.recent small {
+  font-size: 15px;
+  color: #c0c0c0;
+}
+
+section.recent b {
+  font-weight: 600;
+  color: #fff;
+  margin-left: 3px;
+}
+
+section.recent strong {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+/* Recent colors */
+section.recent > div.green strong { color: #48ff81; }
+section.recent > div.blue strong { color: #53E7FF; }
+section.recent > div.purple strong { color: #B57DFF; }
+section.recent > div.pink strong { color: #FF88D8; }
+
+/* Edit button */
+section.recent button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+section.recent button img[alt="edit"] {
+  width: 52px;
+  height: 52px;
+  background: transparent;
+}
+
+.gray {
+  color: #707070;
+}

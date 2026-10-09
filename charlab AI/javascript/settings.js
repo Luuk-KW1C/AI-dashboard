@@ -1,0 +1,1 @@
+const API_URL = 'https://webplatform.enversedstudios.com/ai-dashboard';

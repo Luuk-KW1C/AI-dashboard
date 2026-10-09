@@ -1,0 +1,161 @@
+.navbar ul li strong {
+  background: #B57DFF;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+  background: #b57dff5d;
+}
+
+main.dialogue {
+  flex: 1;
+  padding: 30px 120px;
+}
+
+.dialogue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dialogue-header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  gap: 20px;
+}
+
+.add-button {
+  background-color: #B57DFF;
+  color: black;
+  border: none;
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #885cc0;
+}
+
+.dialogue-table {
+  background: #121214;
+  padding: 10px 30px;
+  border-radius: 50px;
+  display: flex;         
+  flex-direction: column; 
+  gap: 15px;
+}
+
+.dialogue.header {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid #000000;
+  font-size: 20px;
+  opacity: 0.6;
+  align-items: center;
+  border-radius: 30px;
+  color: #707070;
+}
+
+.col-name {
+  text-align: left;
+  padding-left: 75px;
+}
+
+.col-ref {
+  text-align: center;
+
+}
+
+.col-options {
+  text-align: right;
+  padding-right: 80px;
+}
+
+.dialogue-row {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr; 
+  align-items: center;
+  background-color: #292929;
+  border-radius: 30px;
+  padding: 25px 25px;
+  transition: all 0.3s ease;
+}
+
+.dialogue-row:last-child {
+  border-bottom: none;
+}
+
+.cdialogue-cell {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.white-dialogue {
+  width: 40px;
+  height: 40px;
+}
+
+.conversation {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 15px;
+  opacity: 0.5;
+  color: white;
+}
+
+.conversation,
+.description {
+  margin: 0;
+}
+
+.reference {
+  text-align: center; 
+  padding-left: 230px;
+}
+
+.reference .tag {
+  background-color: #181818;
+  padding: 10px 60px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+}
+
+.options {
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end; 
+  justify-content: center;
+}
+
+.options button {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.85;
+  margin-top: -25px;
+}
+
+.options button:hover {
+  opacity: 1;
+}
+
+span,
+.conversation {
+  color: #B57DFF;
+}

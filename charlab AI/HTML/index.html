@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charlab Dashboard</title>
+  <link rel="stylesheet" href="../CSS/dashboard.css" />
+  <link rel="stylesheet" href="../CSS/index.css" />
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.typekit.net/jhu2kwt.css">
+  <script src="../javascript/api.js" defer></script>
+  <script src="../javascript/dashboard.js" defer></script>
+</head>
+<body>
+  <div class="charlab">
+    <img src="../images/charlab-dialogue-logo2.svg" alt="CharLab logo" class="image" />
+    <nav class="navbar">
+      <ul>
+        <li class="active">
+          <a href="../HTML/index.html">
+            <img src="../images/green-square.svg" alt="board" />
+            <strong>Dashboard</strong>
+          </a>
+        </li>
+        <li>
+          <a href="../HTML/scenarios.html">
+            <img src="../images/paper.svg" alt="list" />
+            Scenario's
+          </a>
+        </li>
+        <li>
+          <a href="../HTML/characters.html">
+            <img src="../images/profile.svg" alt="character" />
+            Characters
+          </a>
+        </li>
+        <li>
+          <a href="../HTML/dialogue.html">
+            <img src="../images/mini-message.svg" alt="message" />
+            Dialogue
+          </a>
+        </li>
+        <li>
+          <a href="../HTML/environment.html">
+            <img src="../images/mini-map.svg" alt="map" />
+            Environments
+          </a>
+        </li>
+      </ul>
+
+      <ul class="bottom">
+        <li>
+          <a href="../HTML/settings.html">
+            <img src="../images/settings.svg" alt="settings" />
+            Settings
+          </a>
+        </li>
+        <li class="logout">
+          <a href="../HTML/login.html">
+            <img src="../images/log-in.svg" alt="logout" />
+            Log out
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="dashboard">
+    <div class="dashboard-header">
+      <h1>
+        <img src="../images/dash.svg" alt="dash icon" />
+        <strong>Dashboard</strong>
+      </h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search items" />
+      </div>
+       <img src="../images/handglass.svg" alt="search icon" />
+    </div>
+
+    <div class="content">
+      <section class="quick">
+        <h2 class="gray">QUICK ACCESS</h2>
+
+        <div class="quick-item">
+          <img src="../images/scenarios.svg" alt="scenario's" />
+          <div class="counter-box green">
+            <p id="stats-scenarios">0</p>
+            <h1><strong>Scenario's</strong></h1>
+            <a href="../HTML/scenarios.html" class="plus-btn">+</a>
+          </div>
+        </div>
+
+        <div class="quick-item">
+          <img src="../images/characters.svg" alt="characters" />
+          <div class="counter-box blue">
+            <p id="stats-characters">0</p>
+            <h1><strong>Characters</strong></h1>
+            <a href="../HTML/characters.html" class="plus-btn">+</a>
+          </div>
+        </div>
+
+        <div class="quick-item">
+          <img src="../images/dialogue.svg" alt="dialogue" />
+          <div class="counter-box purple">
+            <p id="stats-dialogue">0</p>
+            <h1><strong>Dialogues</strong></h1>
+            <a href="../HTML/dialogue.html" class="plus-btn">+</a>
+          </div>
+        </div>
+
+        <div class="quick-item">
+          <img src="../images/environment.svg" alt="environment" />
+          <div class="counter-box pink">
+            <p id="stats-environment">0</p>
+            <h1><strong>Environments</strong></h1>
+            <a href="../HTML/environment.html" class="plus-btn">+</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent">
+        <h2 class="gray">RECENTLY EDITED</h2>
+
+        <div class="green">
+          <img src="../images/scenarios.svg" alt="scenario's" />
+          <div>
+            <strong>Hair salon Training</strong>
+            <small>Last edited 30 minutes ago by <b>Ramon</b></small>
+          </div>
+          <button><img src="../images/green-pencil.svg" alt="edit" /></button>
+        </div>
+
+        <div class="pink">
+          <img src="../images/environment.svg" alt="environment" />
+          <div>
+            <strong>Hair Salon</strong>
+            <small>Last edited 31 minutes ago by <b>Ramon</b></small>
+          </div>
+          <button><img src="../images/pink-pencil.svg" alt="edit" /></button>
+        </div>
+
+        <div class="pink">
+          <img src="../images/environment.svg" alt="environment" />
+          <div>
+            <strong>Waiting Room</strong>
+            <small>Last edited 13 hours ago by <b>Ramon</b></small>
+          </div>
+          <button><img src="../images/pink-pencil.svg" alt="edit" /></button>
+        </div>
+
+        <div class="purple">
+          <img src="../images/dialogue.svg" alt="dialogue" />
+          <div>
+            <strong>Hair Salon Training</strong>
+            <small>Last edited 3 days ago by <b>Ramon</b></small>
+          </div>
+          <button><img src="../images/purple-pencil.svg" alt="edit" /></button>
+        </div>
+
+        <div class="pink">
+          <img src="../images/environment.svg" alt="environment" />
+          <div>
+            <strong>Hair Salon</strong>
+            <small>Last edited 6 days ago by <b>Ramon</b></small>
+          </div>
+          <button><img src="../images/pink-pencil.svg" alt="edit" /></button>
+        </div>
+
+        <div class="blue">
+          <img src="../images/characters.svg" alt="characters" />
+          <div>
+            <strong>Hair Stylist</strong>
+            <small>Last edited 27-01-2004 by <b>George Bush</b></small>
+          </div>
+          <button><img src="../images/blue-pencil.svg" alt="edit" /></button>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

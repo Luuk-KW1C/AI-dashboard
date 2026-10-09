@@ -1,0 +1,39 @@
+.navbar ul li.active a {
+  background: #707070;
+  border-radius: 999px;
+  width: 150px;
+  height: 45px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  color: #F2F2F2;
+}
+
+.navbar ul li strong {
+  background: #707070;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+  background: #70707079;
+}
+
+/* settings */
+main.settings {
+  flex: 1;
+  padding: 30px 42px;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  gap: 10px;
+}

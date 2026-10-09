@@ -1,0 +1,200 @@
+/* navbar */
+.navbar ul li strong {
+  background: #48ff81;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+  background: #48ff8250;
+}
+
+main.scenario {
+  flex: 1;
+  padding: 30px 120px;
+}
+
+.scenarios-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scenarios-header h1 {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-button {
+  background-color: #00ff85;
+  color: #181818;
+  border: none;
+  font-size: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #00cc6b;
+}
+
+.table {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #181818;
+  border-radius: 50px;
+  padding: 20px 40px 30px 40px;
+  font-family: "tt-commons-pro", sans-serif;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 90px 1.7fr 1.1fr 1.1fr 1fr;
+  font-family: "tt-commons-pro", sans-serif;
+  color: #707070;
+  padding: 0 5px 10px 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.table-header div:last-child {
+  text-align: right;
+  padding-right: 60px;
+}
+
+.panekoeken {
+  display: gebakken;
+  text-align: spekjes;
+  position: in de pan
+}
+
+.scenario-row {
+  display: grid;
+  grid-template-columns: 80px 1.5fr 1.2fr 1.1fr 1fr;
+  align-items: center;
+  background-color: #292929;
+  border-radius: 15px;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.scenario-row.active {
+  background-color: #1f5731;
+  margin: 0px; 
+  padding: 10px 10px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 5px;
+}
+
+.cell.toggle {
+  justify-content: center;
+}
+
+.cell.name {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cell.name strong {
+  color: #48ff81;
+  font-size: 15px;
+}
+
+.cell.name small {
+  color: #c0c0c0;
+  font-size: 12px;
+}
+
+.cell.ref p,
+.cell.plays p {
+  font-weight: 600;
+  background-color: #181818;
+  padding: 10px 45px;
+  border-radius: 20px;
+  margin: 0;
+}
+
+span {
+  color: #48ff81;
+}
+
+.cell.options {
+  justify-content: flex-end;
+  gap: 0px;
+}
+
+.cell.options button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cell.options button img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.2s ease;
+}
+
+.cell.options button:hover img {
+  transform: scale(1.1);
+}
+
+.toggle-switch {
+  width: 57px;
+  height: 38px;
+  background-color: #707070;
+  padding: 15px 25px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.3s ease;
+  margin-left: -10px;
+}
+
+.toggle-switch img {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s ease;
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+
+.toggle-switch.on img {
+  transform: translateX(10px);
+}
+
+.toggle-switch.off img {
+  transform: translateX(-10px);
+}
+
+.scenario-row.editing {
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #48ff8281;
+}
